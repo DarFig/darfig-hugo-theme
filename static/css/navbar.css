@@ -52,7 +52,12 @@
     .lateral-nav-link{
         justify-content: center;
     }
-   
+    .lateral-navbar:hover .lateral-nav-text{
+        display: inline;
+    }
+    .lateral-navbar:hover .nav-img{
+        display: none;/*hiden image*/
+    }
 }
 
 /* large screens */
@@ -72,4 +77,5 @@
     .lateral-nav-item{
         width: 100%;
     }
+    
 }
