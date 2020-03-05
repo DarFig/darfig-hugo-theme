@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb{
 
 .alpie{
    display: flex;
-   min-height: 25vh;
+   min-height: 20vh;
    flex-direction: column;
    justify-content: space-between;
 }
