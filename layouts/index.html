@@ -47,27 +47,30 @@
           
         </div>
       </div>
-      {{ range .Site.RegularPages }}
-      <div class="column">
-          <div class="card grisClaro bordeVerde">
-              <div class="start2p card-header">
-                  <p class="card-header-title is-centered">
-                  {{ .Title }}
-                  </p>
-              </div>
-              <div class="card-content">
-              
-              
-              <p class="content">{{ .Content }}</p>
-              
-              
-              <a href="{{ .Permalink }}">Continuar</a>
-              </div>
-              <div class="card-footer">
-                  {{ .Date }}
-              </div>
-          </div>
-      </div>
+      {{ range first 10 .Site.RegularPages}}
+        {{if in .Params.type "post" }}
+        <div class="column">
+            <div class="card grisClaro bordeVerde">
+                <div class="start2p card-header">
+                    <p class="card-header-title is-centered">
+                    {{ .Title }}
+                    </p>
+                </div>
+                <div class="card-content">
+                
+                    <p class="content">{{ .Content }}</p>
+                
+                
+                
+                <a href="{{ .Permalink }}">Continuar</a>
+                </div>
+                <div class="card-footer">
+                    {{ .Date }}
+                </div>
+            </div>
+        </div>
+        {{end}}
+
       {{ end }}
       </div>
   

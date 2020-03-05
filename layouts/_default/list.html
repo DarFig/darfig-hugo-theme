@@ -11,13 +11,14 @@
                     <h3 class="textoVerde start2p title is-4">Entradas</h3>
                 </div>
             </div>
-             
-            {{ range .Site.RegularPages }}
+    
+            {{ range .Pages }}
+
             <div class="column">
                 <div class="card grisClaro bordeVerde">
                     <div class="start2p card-header">
                         <p class="card-header-title is-centered">
-                        {{ .title }}
+                        {{ .Title }}
                         </p>
                     </div>
                     <div class="card-content">
@@ -29,7 +30,7 @@
                     <a href="{{ .Permalink }}">Continuar</a>
                     </div>
                     <div class="card-footer">
-                        {{ item["footer"]["label"] }}
+                        {{ .Date }}
                     </div>
                 </div>
             </div>
