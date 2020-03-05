@@ -1,7 +1,7 @@
 :root{
-    --negro: #2d2d2d;
-    --grisOscuro: #777c85;
-    --grisClaro: #b3b9c5;
+    --negro: #23232e;/*#2d2d2d;*/
+    --grisOscuro: #4d4d66;/*#777c85;*/
+    --grisClaro: #a8a8bd;/*#b3b9c5;*/
     --blanco: #ffffff;
     --rojo: #f2777a;
     --naranja: #fca369;
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb{
 
 .alpie{
    display: flex;
-   min-height: 100vh;
+   min-height: 25vh;
    flex-direction: column;
    justify-content: space-between;
 }
