@@ -1,3 +1,22 @@
+:root{
+    --negro: #2d2d2d;
+    --grisOscuro: #777c85;
+    --grisClaro: #b3b9c5;
+    --blanco: #ffffff;
+    --rojo: #f2777a;
+    --naranja: #fca369;
+    --amarillo: #ffd479;
+    --amarilloClaro:#ffeea6; 
+    --verde: #92d192;
+    --azul:#6AB0F3; 
+    --azulClaro:#76d4d6; 
+    --purpura:#e1a6f2; 
+    --purpuraOscuro:#411c4b;
+    --marron:#ac8d58; 
+
+    --transition-speed: 600ms;
+}
+
 .sourceCode {font-family: 'Source Code Pro', monospace;}
 .start2p {font-family: 'Press Start 2P', cursive;}
 .firaCode {font-family: 'Fira Code', monospace;}
@@ -10,22 +29,51 @@
     width: 128px; 
     margin-left: 20px;
 }
-.negro{background-color: #2d2d2d;}
-.grisOscuro{background-color: #777c85;}
-.grisClaro{ background-color: #b3b9c5;}
-.blanco{background-color: #ffffff;}
-.rojo{ background-color: #f2777a;}
-.naranja{ background-color: #fca369;}
-.amarillo{ background-color: #ffd479;}
-.amarilloClaro{background-color:#ffeea6; }
-.verde{background-color: #92d192;}
-.azul{background-color:#6AB0F3; }
-.azulClaro{background-color:#76d4d6; }
-.purpura{background-color:#e1a6f2; }
-.marron{background-color:#ac8d58; }
 
-.textoVerde{color: #92d192;}
+.negro{background-color: var(--negro);}
+.grisOscuro{background-color: var(--grisOscuro);}
+.grisClaro{ background-color: var(--grisClaro);}
+.blanco{background-color: var(--blanco);}
+.rojo{ background-color: var(--rojo);}
+.naranja{ background-color: var(--naranja);}
+.amarillo{ background-color: var(--amarillo);}
+.amarilloClaro{background-color: var(--amarilloClaro); }
+.verde{background-color: var(--verde);}
+.azul{background-color: var(--azul); }
+.azulClaro{background-color:var(--azulClaro); }
+.purpura{background-color:var(--purpura); }
+.marron{background-color:var(--marron); }
+
+.textoVerde{color: var(--verde);}
 .textoCentrado{text-align: center;}
 
-.bordeRojo{ border:1px solid #f2777a; }
-.bordeVerde{ border:1px solid #92d192; }
+.bordeRojo{ border:1px solid var(--rojo); }
+.bordeVerde{ border:1px solid var(--verde); }
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: var(--negro);
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--purpura);
+}
+
+.alpie{
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.centrar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.derecha{
+    position: absolute;
+    right: 0;
+    top:0;
+}
