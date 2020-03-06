@@ -8,7 +8,7 @@
     <div class="column is-8 " >
         <div class="negro bordeVerde">
         <div class=" column textoCentrado">
-            <h3 class="textoVerde start2p title is-4">..........</h3>
+            <h3 class="textoVerde start2p title is-3">Últimos Proyectos</h3>
         </div>
         </div>
         <div class="column"></div>
@@ -16,39 +16,41 @@
         <div class="columns">
           
           <!--  -->
-          <div class="column">
-              
-            <div class="card grisClaro bordeVerde" >
-              <div class="card-image">
-                  <img src="#" class="imgP card-img-top text-center" alt="img">
-              </div>
-              
-              <div class="card-content">
-                <h5 class="start2p title is-5">"titulo"</h5>
-                <div class="content">
-                    <p> <h5 class="title is-6">"body"</h5>
-                      texto </p>
+          {{ range  first 2 (where .Site.RegularPages "Section" "projects") }}
+            <div class="column">
+                
+              <div class="card grisClaro bordeVerde" >
+                <div class="card-image">
+                    <img src="#" class="imgP card-img-top text-center" alt="img">
                 </div>
                 
+                <div class="card-content">
+                  <h5 class="start2p title is-5">{{ .Title }}</h5>
+                  <div class="content">
+                      <p> <h5 class="title is-6">"body"</h5>
+                        texto </p>
+                  </div>
+                  
+                </div>
+                <div class="card-footer">
+                  <small class="card-footer-itme">{{ .Date }}</small>
+                </div>
               </div>
-              <div class="card-footer">
-                <small class="card-footer-itme">"footer"</small>
-              </div>
+              
             </div>
-            
-          </div>
-          <!--  -->
+            <!--  -->
+          
+          {{ end }}
         </div>
   
         <!-- Post prevw -->
         <div class="negro bordeVerde">
-        <div class="column is-offset-4 ">
-            <h3 class="textoVerde start2p title is-3">Últimas entradas</h3>
+        <div class="column textoCentrado ">
+            <h3 class="textoVerde start2p title is-3 ">Últimas Entradas</h3>
           
         </div>
       </div>
-      {{ range first 5 .Site.RegularPages}}
-        {{if in .Params.type "post" }}
+      {{ range  first 5 (where .Site.RegularPages "Section" "posts") }}
         <div class="column">
             <div class="card grisClaro bordeVerde">
                 <div class="start2p card-header">
@@ -58,7 +60,7 @@
                 </div>
                 <div class="card-content">
                 
-                    <p class="content">{{ .Content }}</p>
+                    <p class="content">{{ .Summary }}</p>
                 
                 
                 
@@ -69,7 +71,6 @@
                 </div>
             </div>
         </div>
-        {{end}}
 
       {{ end }}
       </div>
