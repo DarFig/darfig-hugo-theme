@@ -1,6 +1,6 @@
 .lateral-navbar{
     position: fixed;
-    background-color: var(--negro);
+    background-color: var(--purpuraOscuro);
     transition: width 600ms ease;
     z-index: 9999;
 }

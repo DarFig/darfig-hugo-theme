@@ -11,7 +11,7 @@
     --azul:#6AB0F3; 
     --azulClaro:#76d4d6; 
     --purpura:#e1a6f2; 
-    --purpuraOscuro:#411c4b;
+    --purpuraOscuro:#100713;/*#411c4b;*/
     --marron:#ac8d58; 
 
     --transition-speed: 600ms;
@@ -65,6 +65,12 @@ body::-webkit-scrollbar-thumb{
    min-height: 20vh;
    flex-direction: column;
    justify-content: space-between;
+
+}
+.pie{
+    
+    height: 20vh;
+    
 }
 
 .centrar{
