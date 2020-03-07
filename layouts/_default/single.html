@@ -9,7 +9,7 @@
         <div class="column is-8">
             <div class="negro bordeVerde">
                 <div class="column textoCentrado">
-                    <h3 class="textoVerde start2p title is-4">Post</h3>
+                    <h3 class="textoVerde start2p title is-4">{{ .Title }}</h3>
                 </div>
             </div>
             <div class="column"></div>
@@ -32,8 +32,8 @@
                 </div>
                 <div class=" card-footer is-right">
                     <div class="card-header-title is-centered">
-                    {{ .Date }}
-                     </div>
+                        {{ dateFormat "January 2 - 2006" .Date }}
+                    </div>
                 </div>
             </div>
         </div>
