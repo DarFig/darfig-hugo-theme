@@ -12,29 +12,7 @@
                 </div>
             </div>
     
-            {{ range .Pages }}
-
-            <div class="column">
-                <div class="card grisClaro bordeVerde">
-                    <div class="start2p card-header">
-                        <p class="card-header-title is-centered">
-                        {{ .Title }}
-                        </p>
-                    </div>
-                    <div class="card-content">
-                    
-                    
-                    <p class="content">{{ .Summary }}</p>
-                   
-                    
-                    <a href="{{ .Permalink }}">Continuar</a>
-                    </div>
-                    <div class="card-footer">
-                        {{ .Date }}
-                    </div>
-                </div>
-            </div>
-            {{ end }}
+           {{ partial "postsPreview.html" . }}
         </div>
 
     </div>
