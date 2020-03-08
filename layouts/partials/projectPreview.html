@@ -1,27 +1,25 @@
 
-    <div class="column">
-        
-        <div class="card grisClaro bordeVerde" >
-            {{ if .Params.image   }}
-            <div class="card-image">
-                <img src="{{ .Params.image | absURL }}" class=" imgP card-img-top text-center" alt="img">
-                
-            </div>
-            {{ end }}
-            
-            <div class="card-content">
-                <h5 class="start2p title is-5">{{ .Title }}</h5>
-                <div class="content">
-                    <p> <h5 class="title is-6">"body"</h5>
-                    texto </p>
-                </div>
-                
-            </div>
-            <div class="card-footer">
-                <small class="card-footer-itme centrar">{{ dateFormat "January 2 - 2006" .Date }}</small>
-            </div>
+<div class="column">
+    
+    <div class="card grisClaro bordeVerde" >
+        {{ if .Params.image   }}
+        <div class="card-image">
+            <img src="{{ .Params.image | absURL }}" class="imgP card-img-top text-center" alt="img">
         </div>
+        {{ end }}
         
+        <div class="card-content">
+            <h5 class="start2p title is-5">{{ .Title }}</h5>
+            <div class="content">
+                texto </p>
+            </div>
+            
+        </div>
+        <div class="card-footer">
+            <small class="card-footer-itme centrar">{{ dateFormat "January 2 - 2006" .Date }}</small>
+        </div>
     </div>
-    <!--  -->
+    
+</div>
+<!--  -->
           

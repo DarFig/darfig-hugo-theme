@@ -25,9 +25,11 @@
     width: 64px;
 }
 .imgP {
+    margin-top: 10px;
     height:128px;
     width: 128px; 
     margin-left: 20px;
+    border-radius: 30%;
 }
 
 .negro{background-color: var(--negro);}
