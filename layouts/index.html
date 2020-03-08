@@ -16,7 +16,9 @@
           <div class="columns">
             
             <!-- render preview list of projects -->
-            {{ partial "projectsPreview.html" . }}
+            {{ range  first 2 (where .Site.RegularPages "Section" "projects") }}
+              {{ partial "projectPreview.html" . }}
+            {{end}}
           </div>
     
           <!-- Post prevw -->
@@ -28,8 +30,9 @@
           
         </div>
         <!-- render preview list of projects -->
-        {{ partial "postsPreview.html" . }}
-        
+        {{ range  first 5 (where .Site.RegularPages "Section" "posts") }}
+        {{ partial "postPreview.html" . }}
+        {{end}}
       </div>
   
     </div>

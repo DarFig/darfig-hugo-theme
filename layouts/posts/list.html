@@ -11,8 +11,9 @@
                     <h3 class="textoVerde start2p title is-4">Entradas</h3>
                 </div>
             </div>
-    
-           {{ partial "postsPreview.html" . }}
+            {{ range (where .Site.RegularPages "Section" "posts") }}
+                {{ partial "postPreview.html" . }}
+            {{end}}
         </div>
 
     </div>
