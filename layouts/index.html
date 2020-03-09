@@ -19,8 +19,13 @@
             {{ range  first 2 (where .Site.RegularPages "Section" "projects") }}
               {{ partial "projectPreview.html" . }}
             {{end}}
+            
           </div>
-    
+          <div class="centrar textoCentrado">
+            <a class="centrar" href="/projects/"><span class="textoCentrado start2p">...</span></a>
+            <br>
+          </div>
+          
           <!-- Post prevw -->
           <div class="negro bordeVerde">
           <div class="column textoCentrado ">
@@ -33,8 +38,13 @@
         {{ range  first 5 (where .Site.RegularPages "Section" "posts") }}
         {{ partial "postPreview.html" . }}
         {{end}}
+        <div class="centrar textoCentrado">
+          <a class="centrar" href="/posts/"><span class="textoCentrado start2p">...</span></a>
+          <br>
+        </div>
       </div>
-  
+      
+      
     </div>
 
 
