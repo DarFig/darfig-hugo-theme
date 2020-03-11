@@ -1,5 +1,6 @@
 ## ToDo
 
+- [x] error en renderizado del summary en el index y las listas -> pasar a content y revisar luego
 - [x] arreglar formato de las fechas en el pie de las tarjetas
 - [X] añadir imagenes a los proyectos
 - [x] añadir preview de las imagenes de los proyectos en el index
