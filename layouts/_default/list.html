@@ -13,7 +13,7 @@
             </div>
     
            
-            {{ range  }}
+            {{ range (.Paginate .Site.RegularPages).Pages  }}
             <div class="column">
                 <div class="card grisClaro bordeVerde">
                     <div class="start2p card-header">
@@ -50,6 +50,7 @@
                     <a href="{{ .Paginator.Next.URL }}" class="pagination-next textoVerde bordeVerde">&#10145;</a>
                 {{ end }}
             </div>
+            
         </div>
 
     </div>
