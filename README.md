@@ -24,13 +24,21 @@ theme = "darfig-hugo-theme"
 ### Tree
 
 ├── content
+
 │   ├── about.md
+
 │   ├── projPreviewImage.jpg/svg/png
+
 │   ├── posts
+
 │   │   ├── post1.md
+
 │   │   ├── post2.md
+
 │   │   └── post3.md
+
 │   └── projects
+
 │       └── project.md
 
 #### Set image project preview 
