@@ -1,20 +1,15 @@
 <nav class="panel">
-    <p class="panel-heading">
-        Recommended Sites
-    </p>
-    <a class="panel-block"
     
-     href="">
-     <span class="panel-icon">
-        <i class="fas fa-web" aria-hidden="true"></i>
-      </span>
-      site.url
-    </a>
-    <!--
-        la idea que tengo con esto es meter una nueva sección en
-        los contenidos como los post  y que los ficheros contengan una variable
-        con la url del sitio recomendado
-        así aquí pudeo meter un bucle que recorra los ficheros de la sección y lea
-        la url de esa variable
-    --> 
+    <h3 class="panel-heading formatoTexto firaCode textoVerde negro bordeVerde ">
+        {{ .Title }}
+    </h3>
+    
+    
+    <div class="panel-block grisClaro  bordeVerde">
+
+        {{ .Content }}
+     
+      
+    </div>
+    
 </nav>
