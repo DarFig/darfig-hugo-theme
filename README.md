@@ -27,6 +27,10 @@ theme = "darfig-hugo-theme"
 
 │   ├── about.md
 
+
+│   ├── recommended.md
+
+
 │   ├── projPreviewImage.jpg/svg/png
 
 │   ├── posts
@@ -44,6 +48,21 @@ theme = "darfig-hugo-theme"
 #### Set image project preview 
 
 Put **image: "projPreviewImage.svg"** in the markdown project file. And set image under content/ folder.
+
+#### recommended sites
+
+Create a content/recommended.md file with:
+
+```
+---
+title: "recommended sites"
+type: "recommended"
+---
+
+- ![webtitle](url1)
+- ![webtitle](url2)
+
+```
 
 
 ## Theme
