@@ -48,6 +48,9 @@
         {{ range first 1 (where .Site.RegularPages "Type" "recommended") }}
           {{ partial "recommended.html" . }}
         {{end}}
+        {{ range first 1 (where .Site.RegularPages "Type" "recommended") }}
+          {{ partial "recommended.html" . }}
+        {{end}}
 
       </div>
       
