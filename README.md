@@ -87,6 +87,4 @@ type: "recommended"
 ![small](./small.jpg)
 
 
-### Example
 
-See on my [personal website](https://darfig.github.io/)
